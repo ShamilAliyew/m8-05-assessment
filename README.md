@@ -94,7 +94,7 @@ For detailed examples and known limitations, see [safety/README.md](safety/READM
 
 Below is a screenshot of the **IT Study Buddy** chat interface running with a Dark Theme:
 
-![IT Study Buddy Chat UI](screenshot.png)
+![IT Study Buddy Chat UI](ui_screenshot.png)
 
 ---
 
