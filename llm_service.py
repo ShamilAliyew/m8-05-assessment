@@ -13,6 +13,7 @@ Responsibilities of this module:
 """
 
 from __future__ import annotations
+# pyrefly: ignore [missing-import]
 from openai import OpenAI
 import os
 

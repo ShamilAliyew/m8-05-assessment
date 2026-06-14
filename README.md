@@ -11,7 +11,7 @@ It provides explanations and guidance on:
 - Databases
 - Operating Systems
 - Machine Learning
-- Software Engineering fundamentals
+- Software Engineering fundamentals and more about Information Technologies field.
 
 The assistant is strictly limited to IT-related topics and will refuse out-of-scope requests.
 
@@ -60,10 +60,10 @@ The application runs fully on a local Ollama model, meaning:
 
 | Variant | Cases | Passed | Pass rate |
 |----------|----------|----------|----------|
-| Variant A (temp=0.4) | 8 | 6 | 75% |
+| Variant A (temp=0.4) | 8 | 8 | 100% |
 | Variant B (temp=0.1) | 8 | 8 | 100% |
 
-The evaluation is performed using a keyword-based matching judge. Variant B (temperature = 0.1) performs consistently better on factual Computer Science topics and successfully handles all out-of-scope and adversarial attacks. Detailed results can be found in [eval_results.md](eval/eval_results.md).
+The evaluation is performed using an **LLM-as-judge** approach. Both variants achieved a perfect score, correctly answering factual Computer Science topics while successfully refusing out-of-scope and adversarial attacks. The transition to an LLM-as-judge provides a more accurate semantic evaluation compared to the keyword-based approach. Detailed results can be found in [eval_results.md](eval/eval_results.md).
 
 ---
 
