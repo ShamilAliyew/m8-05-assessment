@@ -567,6 +567,13 @@ with st.sidebar:
 
     st.divider()
 
+    st.markdown('<div class="sb-label">Settings</div>', unsafe_allow_html=True)
+    new_temp = st.slider("Temperature", min_value=0.0, max_value=1.0, value=service.temperature, step=0.1)
+    if new_temp != service.temperature:
+        service.temperature = new_temp
+
+    st.divider()
+
     st.markdown('<div class="sb-label">Token Usage</div>', unsafe_allow_html=True)
     st.markdown(
         f"""
